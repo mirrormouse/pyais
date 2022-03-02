@@ -22,7 +22,7 @@ def bound(a,b):
 def create_answer(a,b):
     a = int(document["weight"].value)
     b = int(document["height"].value)
-    model = load_model("my_model.h5")
+    #model = load_model("my_model.h5")
     res=str(a+b)
     rslt = document["result"]
     rslt.text = res
