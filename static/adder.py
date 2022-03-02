@@ -19,7 +19,7 @@ def bound(a,b):
     res.append([i,j])
   return res
 
-def create_answer(a,b):
+def create_answer(e):
     a = int(document["weight"].value)
     b = int(document["height"].value)
     #model = load_model("my_model.h5")
