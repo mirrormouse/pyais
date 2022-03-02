@@ -23,6 +23,10 @@ def create_answer(a,b):
     a = int(document["weight"].value)
     b = int(document["height"].value)
     model = load_model("my_model.h5")
+    res=str(a+b)
+    rslt = document["result"]
+    rslt.text = res
+    """
     x=[a]
     y=[b]
     partx=makedata(x)
@@ -41,8 +45,8 @@ def create_answer(a,b):
         flag=True
     if flag:
         res+=str(result[5-i])
-    rslt = document["result"]
-    rslt.text = res
+    """
+
 
 execute_btn = document["execute"]
 execute_btn.bind("click", create_answer)
